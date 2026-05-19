@@ -6,25 +6,43 @@ AOS.init({
 });
 
 
-// Navbar Background Change On Scroll
+// Navbar Behavior On Scroll (Hide on scroll down, show on scroll up, glassmorphism active on scroll)
+
+let lastScrollY = window.scrollY;
 
 window.addEventListener("scroll", () => {
 
     const navbar = document.querySelector(".navbar");
+    const logo = document.querySelector(".logo");
+    if (!navbar) return;
 
-    if(window.scrollY > 50){
+    const currentScrollY = window.scrollY;
 
-        navbar.style.background = "rgba(0,0,0,0.7)";
-        navbar.style.boxShadow = "0 0 20px rgba(0,198,255,0.3)";
+    // Toggle hidden state on scroll direction
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+
+        navbar.classList.add("navbar-hidden");
+        if (logo) logo.classList.add("logo-hidden");
+
+    } else {
+
+        navbar.classList.remove("navbar-hidden");
+        if (logo) logo.classList.remove("logo-hidden");
 
     }
 
-    else{
+    // Toggle scroll active class for enhanced styling
+    if (currentScrollY > 50) {
 
-        navbar.style.background = "rgba(0,0,0,0.3)";
-        navbar.style.boxShadow = "none";
+        navbar.classList.add("navbar-scrolled");
+
+    } else {
+
+        navbar.classList.remove("navbar-scrolled");
 
     }
+
+    lastScrollY = currentScrollY;
 
 });
 
