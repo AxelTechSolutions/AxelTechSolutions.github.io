@@ -137,6 +137,9 @@ body::before{
     0 10px 30px rgba(0,0,0,0.3);
 
     transition:0.4s;
+    .navbar{
+    max-width:900px;
+}
 }
 
 .navbar:hover{
@@ -800,77 +803,68 @@ footer p{
 /* ========================= */
 /* RESPONSIVE */
 /* ========================= */
-
-@media(max-width:1000px){
-
-    .hero{
-
-        flex-direction:column;
-
-        text-align:center;
-
-        padding-top:200px;
-    }
-
-    .hero-left h1{
-
-        font-size:65px;
-    }
-
-    .hero-description{
-
-        margin:auto;
-        margin-bottom:40px;
-    }
-
-    .hero-btns{
-
-        justify-content:center;
-    }
-
-    .hero-stats{
-
-        justify-content:center;
-    }
-
-    .hero-right img{
-
-        width:350px;
-    }
-}
-
 @media(max-width:768px){
 
+    /* LOGO */
     .logo{
 
-        left:10px;
-        top:8px;
+        top:12px;
+        left:15px;
     }
 
     .logo img{
 
-        height:95px;
+        width:85px;
+        height:auto;
     }
 
+    /* NAVBAR */
     .navbar{
 
         width:92%;
 
-        padding:15px 20px;
+        top:20px;
+
+        padding:18px 15px;
+
+        border-radius:30px;
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
     }
 
     .nav-links{
 
-        gap:15px;
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
 
         flex-wrap:wrap;
 
-        justify-content:center;
+        gap:12px;
+    }
+
+    .nav-links a{
+
+        font-size:15px;
+    }
+
+    /* HERO */
+    .hero{
+
+        padding-top:180px;
     }
 
     .hero-left h1{
 
-        font-size:48px;
+        font-size:42px;
+
+        line-height:1.2;
     }
 
     .hero-description{
@@ -880,16 +874,32 @@ footer p{
 
     .hero-right img{
 
-        width:260px;
+        width:250px;
     }
 
+    /* SECTION TITLE */
     .section-title{
 
-        font-size:38px;
+        font-size:34px;
+
+        line-height:1.2;
     }
 
+    /* TECH CARDS */
+    .tech-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .tech-card{
+
+        width:100%;
+    }
+
+    /* CONTACT */
     .contact-form{
 
-        padding:35px;
+        padding:30px 20px;
     }
+
 }
