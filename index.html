@@ -291,7 +291,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    emailjs.init("FRqFuJkQ92zppK3j");
+    emailjs.init("FRqFuJkqO92zppK3j");
 
     const form = document.getElementById("contact-form");
 
@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         emailjs.sendForm(
             "service_a3eazkf",
-            "template_bodmt78",
+            "template_bm9ggba",
             form
         )
 
@@ -325,7 +325,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             console.log(error);
 
-            alert("❌ Failed To Send Message");
+            alert(error.text);
 
             button.innerHTML = "🚀 Start Building";
             button.disabled = false;
