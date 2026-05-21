@@ -1,3 +1,6 @@
+# Fully Updated `index.html`
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,17 +12,18 @@
     <title>AxelTech & Solutions</title>
 
     <!-- GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- CSS -->
+
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -28,38 +32,38 @@
 
     <!-- BACKGROUND GLOW -->
 
-    <div class="bg-glow glow1"></div>
-    <div class="bg-glow glow2"></div>
+    <div class="bg-blur blur1"></div>
+    <div class="bg-blur blur2"></div>
 
-    <!-- LOGO -->
-
-    <div class="logo">
-
-        <img src="images/logo.png" alt="AxelTech Logo">
-
-    </div>
 
     <!-- NAVBAR -->
 
-    <nav class="navbar">
+    <header class="navbar">
 
-        <div class="nav-links">
-
-            <a href="#">Home</a>
-            <a href="#services">Services</a>
-            <a href="#technologies">Technologies</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Launch Idea</a>
-
+        <div class="logo">
+            <img src="images/logo2.png" alt="AxelTech Logo">
         </div>
 
-    </nav>
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Launch Idea</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
 
     <!-- HERO SECTION -->
 
-    <section class="hero">
-
-        <!-- LEFT -->
+    <section class="hero" id="home">
 
         <div class="hero-left" data-aos="fade-right">
 
@@ -74,17 +78,12 @@
             </h1>
 
             <p class="hero-description">
-
-                AxelTech & Solutions creates modern websites,
-                mobile apps, ERP systems and AI-powered
-                digital solutions for startups, businesses
-                and students.
-
+                AxelTech & Solutions creates modern websites, mobile apps,
+                ERP systems and AI-powered digital solutions for startups,
+                businesses and students.
             </p>
 
-            <!-- BUTTONS -->
-
-            <div class="hero-btns">
+            <div class="hero-buttons">
 
                 <a href="#contact" class="btn btn-primary">
                     Launch Your Idea
@@ -96,114 +95,17 @@
 
             </div>
 
-            <!-- STATS -->
-
-            <div class="hero-stats">
-
-                <div>
-                    <h2>50+</h2>
-                    <span>Projects</span>
-                </div>
-
-                <div>
-                    <h2>100%</h2>
-                    <span>Support</span>
-                </div>
-
-                <div>
-                    <h2>24/7</h2>
-                    <span>Assistance</span>
-                </div>
-
-            </div>
-
         </div>
 
-        <!-- RIGHT -->
 
         <div class="hero-right" data-aos="fade-left">
 
-            <div class="circle-glow"></div>
-
-            <img src="images/logo.png" alt="AxelTech">
+            <img src="images/logo2.png" alt="AxelTech Logo">
 
         </div>
 
     </section>
 
-    <!-- WHY CHOOSE US -->
-
-    <section class="section">
-
-        <h2 class="section-title">
-            Why <span>AxelTech?</span>
-        </h2>
-
-        <div class="services-grid">
-
-            <!-- CARD -->
-
-            <div class="service-card" data-aos="fade-up">
-
-                <i class="fas fa-bolt"></i>
-
-                <h3>Fast Development</h3>
-
-                <p>
-                    High performance digital solutions
-                    with modern technologies and futuristic UI.
-                </p>
-
-            </div>
-
-            <!-- CARD -->
-
-            <div class="service-card" data-aos="fade-up">
-
-                <i class="fas fa-shield-alt"></i>
-
-                <h3>Secure Systems</h3>
-
-                <p>
-                    Secure ERP systems and applications
-                    with scalable cloud architecture.
-                </p>
-
-            </div>
-
-            <!-- CARD -->
-
-            <div class="service-card" data-aos="fade-up">
-
-                <i class="fas fa-brain"></i>
-
-                <h3>Smart Innovation</h3>
-
-                <p>
-                    Futuristic UI/UX and intelligent
-                    digital experiences for startups.
-                </p>
-
-            </div>
-
-            <!-- CARD -->
-
-            <div class="service-card" data-aos="fade-up">
-
-                <i class="fas fa-rocket"></i>
-
-                <h3>Startup Ready</h3>
-
-                <p>
-                    Complete launch solutions for
-                    businesses, startups and creators.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
 
     <!-- SERVICES -->
 
@@ -215,99 +117,30 @@
 
         <div class="services-grid">
 
-            <!-- CARD -->
-
-            <div class="service-card" data-aos="fade-up">
-
-                <i class="fas fa-code"></i>
-
+            <div class="service-card" data-aos="zoom-in">
                 <h3>Website Development</h3>
-
-                <p>
-                    Modern responsive websites with
-                    premium UI and smooth animations.
-                </p>
-
+                <p>Modern responsive business and portfolio websites.</p>
             </div>
 
-            <!-- CARD -->
-
-            <div class="service-card" data-aos="fade-up">
-
-                <i class="fas fa-mobile-alt"></i>
-
+            <div class="service-card" data-aos="zoom-in">
                 <h3>Mobile Applications</h3>
-
-                <p>
-                    Android & iOS applications with
-                    modern technologies and secure systems.
-                </p>
-
+                <p>Android and Flutter mobile app development solutions.</p>
             </div>
 
-            <!-- CARD -->
-
-            <div class="service-card" data-aos="fade-up">
-
-                <i class="fas fa-laptop-code"></i>
-
-                <h3>Software Solutions</h3>
-
-                <p>
-                    Smart software systems for startups,
-                    companies and digital businesses.
-                </p>
-
-            </div>
-
-            <!-- CARD -->
-
-            <div class="service-card" data-aos="fade-up">
-
-                <i class="fas fa-project-diagram"></i>
-
+            <div class="service-card" data-aos="zoom-in">
                 <h3>ERP Systems</h3>
-
-                <p>
-                    Scalable ERP management systems
-                    with advanced security features.
-                </p>
-
+                <p>Secure and scalable ERP systems for institutions.</p>
             </div>
 
-            <!-- CARD -->
-
-            <div class="service-card" data-aos="fade-up">
-
-                <i class="fas fa-graduation-cap"></i>
-
-                <h3>MCA / BCA Projects</h3>
-
-                <p>
-                    Professional academic projects with
-                    documentation and premium UI.
-                </p>
-
-            </div>
-
-            <!-- CARD -->
-
-            <div class="service-card" data-aos="fade-up">
-
-                <i class="fas fa-paint-brush"></i>
-
-                <h3>UI / UX Design</h3>
-
-                <p>
-                    Creative futuristic interfaces
-                    with premium user experience.
-                </p>
-
+            <div class="service-card" data-aos="zoom-in">
+                <h3>UI/UX Design</h3>
+                <p>Beautiful futuristic interfaces with premium feel.</p>
             </div>
 
         </div>
 
     </section>
+
 
     <!-- TECHNOLOGIES -->
 
@@ -319,18 +152,19 @@
 
         <div class="tech-grid">
 
+            <div class="tech-card">HTML5</div>
+            <div class="tech-card">CSS3</div>
+            <div class="tech-card">JavaScript</div>
             <div class="tech-card">Flutter</div>
             <div class="tech-card">Firebase</div>
-            <div class="tech-card">React JS</div>
-            <div class="tech-card">Node JS</div>
-            <div class="tech-card">Python</div>
-            <div class="tech-card">MySQL</div>
-            <div class="tech-card">AI Tools</div>
-            <div class="tech-card">ERP Systems</div>
+            <div class="tech-card">Supabase</div>
+            <div class="tech-card">React</div>
+            <div class="tech-card">GitHub</div>
 
         </div>
 
     </section>
+
 
     <!-- PROJECTS -->
 
@@ -342,54 +176,25 @@
 
         <div class="services-grid">
 
-            <!-- CARD -->
-
             <div class="service-card">
-
-                <i class="fas fa-quote-right"></i>
-
-                <h3>Daily Quotes App</h3>
-
-                <p>
-                    Inspirational mobile application
-                    with modern animations and clean UI.
-                </p>
-
+                <h3>Voting App</h3>
+                <p>Secure digital voting application with Firebase integration.</p>
             </div>
 
-            <!-- CARD -->
-
             <div class="service-card">
-
-                <i class="fas fa-vote-yea"></i>
-
-                <h3>Online Voting System</h3>
-
-                <p>
-                    Secure online voting platform with
-                    authentication and cloud database.
-                </p>
-
+                <h3>Daily Quotes</h3>
+                <p>Motivational quote app with clean futuristic UI.</p>
             </div>
 
-            <!-- CARD -->
-
             <div class="service-card">
-
-                <i class="fas fa-ticket-alt"></i>
-
-                <h3>One Click Booking</h3>
-
-                <p>
-                    Fast ticket booking platform with
-                    smooth UX and automation systems.
-                </p>
-
+                <h3>ERP Dashboard</h3>
+                <p>Institution management system with advanced modules.</p>
             </div>
 
         </div>
 
     </section>
+
 
     <!-- CONTACT -->
 
@@ -399,72 +204,128 @@
             Launch <span>Your Idea</span>
         </h2>
 
-        <form class="contact-form">
+        <form class="contact-form" id="contact-form">
 
-            <input type="text" placeholder="Your Name">
+            <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required>
 
-            <input type="email" placeholder="Your Email">
+            <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required>
 
-            <textarea placeholder="Tell us about your project"></textarea>
+            <textarea
+            name="message"
+            placeholder="Tell us about your project"
+            required></textarea>
 
-            <button class="btn btn-primary">
+            <button type="submit" class="btn btn-primary">
+
                 🚀 Start Building
+
             </button>
 
         </form>
 
     </section>
 
+
     <!-- FOOTER -->
 
-    <footer>
-
-        <h2>AxelTech & Solutions</h2>
+    <footer class="footer">
 
         <p>
-            Innovate. Build. Succeed.
+            © 2026 AxelTech & Solutions. All Rights Reserved.
         </p>
-
-        <!-- SOCIALS -->
-
-        <div class="socials">
-
-            <a href="https://instagram.com/axeltech.solutions">
-                <i class="fab fa-instagram"></i>
-            </a>
-
-            <a href="https://linkedin.com">
-                <i class="fab fa-linkedin"></i>
-            </a>
-
-            <a href="https://github.com">
-                <i class="fab fa-github"></i>
-            </a>
-
-            <a href="https://wa.me/919019235919">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-
-        </div>
 
     </footer>
 
+
     <!-- WHATSAPP -->
 
-    <a href="https://wa.me/919019235919" class="whatsapp">
+    <a
+    href="https://wa.me/919000000000"
+    class="whatsapp-float"
+    target="_blank">
 
-        <i class="fab fa-whatsapp"></i>
+        💬
 
     </a>
+
 
     <!-- AOS -->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+
     <!-- JS -->
 
     <script src="js/script.js"></script>
 
+
+    <!-- EMAIL JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+    <script>
+
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+
+
+    emailjs.init("FRqFuJkQ92zppK3j");
+
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function(event){
+
+        event.preventDefault();
+
+        const button = form.querySelector("button");
+
+        button.innerHTML = "Sending...";
+        button.disabled = true;
+
+        emailjs.sendForm(
+            "service_a3eazkf",
+            "template_bodmt78",
+            this
+        )
+
+        .then(() => {
+
+            alert("🚀 Message Sent Successfully!");
+
+            form.reset();
+
+            button.innerHTML = "🚀 Start Building";
+            button.disabled = false;
+
+        })
+
+        .catch((error) => {
+
+            alert("❌ Failed To Send Message");
+
+            console.log(error);
+
+            button.innerHTML = "🚀 Start Building";
+            button.disabled = false;
+
+        });
+
+    });
+
+    </script>
+
 </body>
 
 </html>
+```
