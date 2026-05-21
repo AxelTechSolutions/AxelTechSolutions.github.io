@@ -73,13 +73,12 @@ body::before{
 /* ========================= */
 /* HUGE LOGO */
 /* ========================= */
-
 .logo{
 
     position:fixed;
 
-    top:5px;
-    left:20px;
+    top:15px;
+    left:25px;
 
     z-index:1001;
 
@@ -88,9 +87,9 @@ body::before{
 
 .logo img{
 
-    height:170px;
+    width:140px;
 
-    width:auto;
+    height:auto;
 
     object-fit:contain;
 
@@ -106,7 +105,7 @@ body::before{
 
 .logo img:hover{
 
-    transform:scale(1.08);
+    transform:scale(1.05);
 }
 
 /* ========================= */
